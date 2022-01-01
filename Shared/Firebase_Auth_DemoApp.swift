@@ -17,7 +17,7 @@ struct Firebase_Auth_DemoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchView()
         }
     }
 }
