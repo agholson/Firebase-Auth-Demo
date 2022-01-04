@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		178E61ADEA723B29598BB313 /* Pods_Firebase_Auth_Demo__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9CBDF4005822A013E00C99 /* Pods_Firebase_Auth_Demo__iOS_.framework */; };
 		75507E472780F59A00B1EC1F /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75507E462780F59A00B1EC1F /* LaunchView.swift */; };
+		75507E49278234E100B1EC1F /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75507E48278234E100B1EC1F /* LoginForm.swift */; };
+		75507E4B2783C0BD00B1EC1F /* CreateAccountForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75507E4A2783C0BD00B1EC1F /* CreateAccountForm.swift */; };
 		75EFFE64277BE6030059A88B /* Firebase_Auth_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EFFE54277BE6030059A88B /* Firebase_Auth_DemoApp.swift */; };
 		75EFFE65277BE6030059A88B /* Firebase_Auth_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EFFE54277BE6030059A88B /* Firebase_Auth_DemoApp.swift */; };
 		75EFFE66277BE6030059A88B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EFFE55277BE6030059A88B /* ContentView.swift */; };
@@ -16,7 +18,6 @@
 		75EFFE68277BE6030059A88B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EFFE56277BE6030059A88B /* Assets.xcassets */; };
 		75EFFE69277BE6030059A88B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EFFE56277BE6030059A88B /* Assets.xcassets */; };
 		75EFFE78277BE7810059A88B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75EFFE77277BE7810059A88B /* GoogleService-Info.plist */; };
-		75EFFE7D277D119B0059A88B /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EFFE7C277D119B0059A88B /* LoginForm.swift */; };
 		785FCA17999ED777E90D1126 /* Pods_Firebase_Auth_Demo__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69621020168FC26EEEDE46EC /* Pods_Firebase_Auth_Demo__macOS_.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,16 +26,16 @@
 		30ED48AA13F6029C4D5F9C17 /* Pods-Firebase Auth Demo (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Auth Demo (iOS).debug.xcconfig"; path = "Target Support Files/Pods-Firebase Auth Demo (iOS)/Pods-Firebase Auth Demo (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		69621020168FC26EEEDE46EC /* Pods_Firebase_Auth_Demo__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Auth_Demo__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75507E462780F59A00B1EC1F /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		75507E48278234E100B1EC1F /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		75507E4A2783C0BD00B1EC1F /* CreateAccountForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountForm.swift; sourceTree = "<group>"; };
 		75EFFE54277BE6030059A88B /* Firebase_Auth_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Auth_DemoApp.swift; sourceTree = "<group>"; };
 		75EFFE55277BE6030059A88B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75EFFE56277BE6030059A88B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75EFFE5B277BE6030059A88B /* Firebase Auth Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Auth Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EFFE61277BE6030059A88B /* Firebase Auth Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Auth Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		75EFFE63277BE6030059A88B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		75EFFE77277BE7810059A88B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75EFFE79277BE8970059A88B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		75EFFE7B277BE95A0059A88B /* auth_providers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auth_providers.png; sourceTree = "<group>"; };
-		75EFFE7C277D119B0059A88B /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		9C760940E2718F5F795E46B5 /* Pods-Firebase Auth Demo (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Auth Demo (iOS).release.xcconfig"; path = "Target Support Files/Pods-Firebase Auth Demo (iOS)/Pods-Firebase Auth Demo (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		D85F32F1765D273B67C65CD2 /* Pods-Firebase Auth Demo (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Auth Demo (macOS).release.xcconfig"; path = "Target Support Files/Pods-Firebase Auth Demo (macOS)/Pods-Firebase Auth Demo (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		F93223EA3DE5E3C957EE00F9 /* Pods-Firebase Auth Demo (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Auth Demo (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Firebase Auth Demo (macOS)/Pods-Firebase Auth Demo (macOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 				75EFFE7A277BE90F0059A88B /* img */,
 				75EFFE53277BE6030059A88B /* Shared */,
 				75EFFE77277BE7810059A88B /* GoogleService-Info.plist */,
-				75EFFE62277BE6030059A88B /* macOS */,
 				75EFFE5C277BE6030059A88B /* Products */,
 				1A2F90A17D1EDCC8B570C193 /* Pods */,
 				A1E0BF80AA6238E5C79D27F4 /* Frameworks */,
@@ -91,8 +91,9 @@
 				75EFFE54277BE6030059A88B /* Firebase_Auth_DemoApp.swift */,
 				75507E462780F59A00B1EC1F /* LaunchView.swift */,
 				75EFFE55277BE6030059A88B /* ContentView.swift */,
-				75EFFE7C277D119B0059A88B /* LoginForm.swift */,
 				75EFFE56277BE6030059A88B /* Assets.xcassets */,
+				75507E48278234E100B1EC1F /* LoginForm.swift */,
+				75507E4A2783C0BD00B1EC1F /* CreateAccountForm.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -104,14 +105,6 @@
 				75EFFE61277BE6030059A88B /* Firebase Auth Demo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		75EFFE62277BE6030059A88B /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				75EFFE63277BE6030059A88B /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		75EFFE7A277BE90F0059A88B /* img */ = {
@@ -297,10 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75507E4B2783C0BD00B1EC1F /* CreateAccountForm.swift in Sources */,
 				75EFFE66277BE6030059A88B /* ContentView.swift in Sources */,
 				75507E472780F59A00B1EC1F /* LaunchView.swift in Sources */,
-				75EFFE7D277D119B0059A88B /* LoginForm.swift in Sources */,
 				75EFFE64277BE6030059A88B /* Firebase_Auth_DemoApp.swift in Sources */,
+				75507E49278234E100B1EC1F /* LoginForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

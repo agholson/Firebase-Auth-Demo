@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import FirebaseAuthUI
+import FirebaseAuth
 
 struct ContentView: View {
     
@@ -19,7 +19,8 @@ struct ContentView: View {
             
             // Provide sign out button
             Button {
-                try! FUIAuth.defaultAuthUI()?.signOut()
+                // Tells Firebase user signed out
+                try! Auth.auth().signOut()
                 
                 // Set logged in to false
                 loggedIn = false 

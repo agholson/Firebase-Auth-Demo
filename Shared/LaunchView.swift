@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import FirebaseEmailAuthUI
+import FirebaseAuth
 
 struct LaunchView: View {
     
@@ -16,27 +16,45 @@ struct LaunchView: View {
     // Determines whether/ not to show the loginForm
     @State var loginFormShowing = false
     
+    // Tracks whether/ not to display the create account form
+    @State var createAccountFormShowing = false
+    
     var body: some View {
         
         // Check if person is loggedIN
         if !loggedIn {
-        
-            Button {
+            
+            VStack(spacing: 20) {
+                // MARK: Sign in
+                Button {
+                    
+                    // Show the loginForm, when user clicks to sign in
+                    loginFormShowing = true
+                    
+                } label: {
+                    Text("Sign in")
+                }
+                // Once UI appears, see if person id logged in, when this is dismissed, check the login status
+                .sheet(isPresented: $loginFormShowing, onDismiss: checkLogin) {
+                    LoginForm(formShowing: $loginFormShowing)
+                }
                 
-                // Show the loginForm, when user clicks to sign in
-                loginFormShowing = true
-                
-            } label: {
-                Text("Sign in")
-            }
-            // Once UI appears, see if person id logged in, when this is dismissed, check the login status
-            .sheet(isPresented: $loginFormShowing, onDismiss: checkLogin) {
-                LoginForm()
+                // MARK: Create Account
+                Button {
+                    createAccountFormShowing = true
+                } label: {
+                    Text("Create account")
+                }
+                .sheet(isPresented: $createAccountFormShowing, onDismiss: checkLogin) {
+                    CreateAccountForm(formShowing: $createAccountFormShowing)
+                }
+
             }
             .onAppear {
-                // Determines if person is not logged in 
+                // Determines if person is not logged in
                 checkLogin()
             }
+            
         }
         else {
             // Show logged in view
@@ -53,7 +71,7 @@ struct LaunchView: View {
     func checkLogin() {
         
         // Check if the user is logged in, if nill, then it means user is not, else we set to true
-        loggedIn = FUIAuth.defaultAuthUI()?.auth?.currentUser == nil ? false : true
+        loggedIn = Auth.auth().currentUser == nil ? false : true
         
     }
 }
