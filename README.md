@@ -11,6 +11,9 @@ providers we can accept, but will choose the email only for now:
 We can use Google's pre-built UIs in order to get started even faster: 
 https://firebase.google.com/docs/auth/ios/firebaseui?authuser=0.
 
+### Locking Down the Database
+See here for a good article on how to use different rules to control access to different Firestore collections:
+https://khreniak.medium.com/cloud-firestore-security-rules-basics-fac6b6bea18e
 
 ## Pre-Built UI Views
 Thanks to Google, you can implement a great login view within a few minutes. It will automatically interact with

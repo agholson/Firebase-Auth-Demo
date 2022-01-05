@@ -5,8 +5,9 @@ target 'Firebase Auth Demo (iOS)' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Firebase/Auth'
+  pod 'Firebase'
+  pod 'Firebase/Firestore'
   
-
 # Pods for Firebase Auth Demo (iOS)
 
 end

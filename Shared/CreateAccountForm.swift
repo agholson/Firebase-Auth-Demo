@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseAuth
+import FirebaseFirestore
 
 struct CreateAccountForm: View {
     
@@ -65,7 +66,6 @@ struct CreateAccountForm: View {
      */
     func createAccount() {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
-             
             
             DispatchQueue.main.async {
                 if error != nil {
@@ -79,10 +79,37 @@ struct CreateAccountForm: View {
                 else {
                     // Hides the form
                     formShowing = false
+                    
+                    // Save the first name
+                    saveFirstName()
                 }
             }
             
             
+            
+        }
+    }
+    
+    func saveFirstName() {
+        
+        // Ensure user is logged in
+        if let currentUser = Auth.auth().currentUser {
+            // Try to modify the name after trimming extra whitespace and new line characters
+            let modifiedFirstName = name.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            // Access our database
+            let db = Firestore.firestore()
+            
+            // Get the current user's information
+            let path = db.collection("users").document(currentUser.uid)
+            
+            // Set the first name to the user selected name, and create the document if it does not exist
+            path.setData(["name": name]) { error in
+                // If an error occurred, then show that to the user
+                if let error = error {
+                    accountErrorMessage = error.localizedDescription
+                }
+            }
             
         }
     }
